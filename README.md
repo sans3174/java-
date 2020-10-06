@@ -125,52 +125,58 @@ java课程作业项目仓库
 ```java
   void show() {<br>
 		  m=cpu.getSpeed();<br>
-		  n=HD.getAmount();<br>
-		  if(m!=0&n!=0) {<br>
-			  System.out.println("speed="+m+'\n'+"amount="+n);<br>
-	      }<br>
-		  else if(m==0&n!=0) {<br>
-			  System.out.println("cpu运行速度数据有误，请核实后再次输入");<br>
-		  }<br>
-		  else if(m!=0&n==0) {<br>
-			  System.out.println("硬盘存储数据有误，请核实后再次输入");<br>
-		  }<br>
-		  else {<br>
-			  System.out.println("cpu运行速度及硬盘存储数据有误，请核实后再次输入");<br>
-		  }<br>
-      //用于将对应对象内的属性输出到控制台<br>
-      //通过调用返回属性值的方法实现对private变量的调用<br>
-      //通过判断实现对用户输入数据合理性的反馈<br>
+		  n=HD.getAmount();
+		  if(m!=0&n!=0) {
+			  System.out.println("speed="+m+'\n'+"amount="+n);
+	      }
+		  else if(m==0&n!=0) {
+			  System.out.println("cpu运行速度数据有误，请核实后再次输入");
+		  }
+		  else if(m!=0&n==0) {
+			  System.out.println("硬盘存储数据有误，请核实后再次输入");
+		  }
+		  else {
+			  System.out.println("cpu运行速度及硬盘存储数据有误，请核实后再次输入");
+		  }
+      //用于将对应对象内的属性输出到控制台
+      //通过调用返回属性值的方法实现对private变量的调用
+      //通过判断实现对用户输入数据合理性的反馈
   ```
       
 ### Test.java：
 
 ```java
-  public static void main(String arg[]) {<br>
-		CPU cpu = new CPU();<br>
-		HardDisk disk =new HardDisk();<br>
-		PC pc = new PC();<br>
-		cpu.setSpeed(2200);<br>
-		disk.setAmount(200);<br>
-		pc.setCPU(cpu);<br>
-		pc.setHardDisk(disk);<br>
-		pc.show();<br>
-	  }    <br>
-    //编写主方法作为程序运行入口，使项目正常运行<br>
-    //调用各源程序方法实现需求<br>
+  public static void main(String arg[]) {
+		CPU cpu = new CPU();
+		HardDisk disk =new HardDisk();
+		PC pc = new PC();
+		cpu.setSpeed(2200);
+		disk.setAmount(200);
+		pc.setCPU(cpu);
+		pc.setHardDisk(disk);
+		pc.show();
+	  }    
+    //编写主方法作为程序运行入口，使项目正常运行
+    //调用各源程序方法实现需求
 ```
     
 ## 实验结果
-<br>
-正常赋值程序截图：<br>
-![image](https://github.com/sans3174/java-/blob/sans3174.GitHub.io/image/%E5%9B%BE%E7%89%871.png）
-<br>
-cpu运行速度不合理赋值程序截图：<br>
-![image](https://github.com/sans3174/java-/blob/sans3174.GitHub.io/image/%E5%9B%BE%E7%89%872.png)
-<br>
-cpu运行速度及硬盘存储不合理赋值程序截图:<br>
-![image](https://github.com/sans3174/java-/blob/sans3174.GitHub.io/image/%E5%9B%BE%E7%89%873.png)
-<br>
+
+
+正常赋值程序截图：<br><br><br>
+
+![%E5%9B%BE%E7%89%871.png](https://github.com/sans3174/java-/blob/sans3174.GitHub.io/image/%E5%9B%BE%E7%89%871.png)
+
+
+cpu运行速度不合理赋值程序截图：<br><br><br>
+
+![%E5%9B%BE%E7%89%872.png](https://github.com/sans3174/java-/blob/sans3174.GitHub.io/image/%E5%9B%BE%E7%89%872.png)
+
+
+cpu运行速度及硬盘存储不合理赋值程序截图:<br><br><br>
+
+![%E5%9B%BE%E7%89%873.png](https://github.com/sans3174/java-/blob/sans3174.GitHub.io/image/%E5%9B%BE%E7%89%873.png)
+
 
 ## 实验感想
 
